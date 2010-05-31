@@ -6,7 +6,7 @@ configure do
 # connect to the database
 dbconfig = YAML.load(File.read('config/database.yml'))
 puts dbconfig
-ActiveRecord::Base.establish_connection dbconfig['development']
+ActiveRecord::Base.establish_connection dbconfig['production']
 begin
 ActiveRecord::Schema.define do
 create_table :students do |t|

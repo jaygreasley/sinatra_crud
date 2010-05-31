@@ -1,3 +1,7 @@
 development:
   adapter: sqlite3
   database: development.sqlite3
+  
+production:
+  adapter: postgresql
+  database: production.sqlite3  
