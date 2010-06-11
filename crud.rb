@@ -30,7 +30,7 @@ end
 
 get '/' do
 erb :new
-# Contd. from previous page
+@posts = Student.all()
 end
 # Save the participant's info
 
