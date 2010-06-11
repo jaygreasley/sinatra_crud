@@ -29,8 +29,10 @@ end
 # New participant
 
 get '/' do
+
+@students = Student.all
 erb :new
-@posts = Student.all()
+
 end
 # Save the participant's info
 

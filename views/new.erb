@@ -3,8 +3,15 @@
 
 
 <h1>Change requests</h1>
+
+<% for student in @students %>
+  <h1><%= student.name %></h1> - <h1><%= student.email %></h1>
+<% end %>
+
+
 <p>Please enter your name and change request. Have
 fun!</p>
+
 <form action="/" method="post" accept-charset="utf-8">
 <input type="text" name="name" value="Name ..."
 id="name">
