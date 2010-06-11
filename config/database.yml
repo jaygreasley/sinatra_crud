@@ -4,4 +4,4 @@ development:
   
 production:
   adapter: postgresql
-  database: production.sqlite3  
+  database: production.sqlite3
