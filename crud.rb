@@ -58,3 +58,12 @@ rescue
 redirect '/'
 end
 end
+
+post '/:id' do
+begin
+@student = Student.delete(params[:id])
+erb :show
+rescue
+redirect '/'
+end
+end
